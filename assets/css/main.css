@@ -730,7 +730,7 @@ section,
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 0 0 20px;
   margin-top: -2px;
   border-left: 2px solid var(--accent-color);
   position: relative;
@@ -899,21 +899,24 @@ section,
 
 .services .service-item .icon {
   background: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
   transition: 0.5s;
   border: 1px solid var(--accent-color);
   margin-right: 20px;
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  flex: 0 0 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;   
 }
 
 .services .service-item .icon i {
   color: var(--contrast-color);
-  font-size: 24px;
-  line-height: 0;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .services .service-item:hover .icon {
@@ -1323,4 +1326,8 @@ section,
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
   /* background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%); */
+}
+
+.hero-cta .btn {
+  border-radius: 10px;
 }
