@@ -919,6 +919,20 @@ section,
   line-height: 1;
 }
 
+@media (max-width: 575px) {
+  .services .service-item .icon {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    flex: 0 0 48px;
+  }
+
+.services .service-item .icon i {
+    font-size: 22px;
+  }
+}
+
 .services .service-item:hover .icon {
   background: var(--surface-color);
 }
