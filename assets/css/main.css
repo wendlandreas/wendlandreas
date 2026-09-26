@@ -626,6 +626,47 @@ section,
   font-size: 24px;
 }
 
+.about .section-title .positioning-statement {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 1rem;
+  max-width: 850px;
+}
+
+.about .section-title {
+  padding-bottom: 28px;
+}
+
+.about .content .scope-statement {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-bottom: 1rem;
+}
+
+.about-portrait {
+  width: 82%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .about .section-title .positioning-statement {
+    font-size: 25px;
+  }
+
+  .about .content .scope-statement {
+    font-size: 20px;
+    line-height: 1.55;
+  }
+
+  .about-portrait {
+    width: 100%;
+  }
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
